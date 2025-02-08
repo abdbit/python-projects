@@ -27,7 +27,7 @@ print(isaid) # uses google speech-to-text to change speech into text
 # isaid = recognizer.recognize_google(audio)
 
 if isaid == sr.UnknownValueError():
-    print("Sorry, could not understand the audio.")
+    print("Sorry, could not understand the audio...")
 
 # time.sleep(0.5) #to add delay
 
