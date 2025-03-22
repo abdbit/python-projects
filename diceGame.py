@@ -7,6 +7,6 @@ randompick = int(random.choice(possibleoutcome))
 while randompick < thirty:
    oneplayer = input("Should I roll? (yes/no): ")
    if oneplayer.lower() == "yes":
-        randompick = random.choice(possibleoutcome)  # Roll the dice again
+        randompick = int(random.choice(possibleoutcome))
         print(randompick)
 
