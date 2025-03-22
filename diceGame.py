@@ -9,4 +9,5 @@ while randompick < thirty:
    if oneplayer.lower() == "yes":
         randompick = int(random.choice(possibleoutcome))
         print(randompick)
-
+   else:
+       print("sorry")
