@@ -1,16 +1,14 @@
 import random
 
 possibleoutcome = ['1','2','3','4','5','6']
-randompick = int(random.choice(possibleoutcome))
 
-while playerturns < 30:
-   oneplayer = input("Wanna roll the dice? (yes/no): ")
-   if oneplayer.lower() == "yes" or "Yes" or "YES":
-        randompick = int(random.choice(possibleoutcome))
-        print("Your roll: " + randompick)
-        playerturns = int( 0 + randompick)
-        print("Your score: " + playerturns)
-   else:
-       print("Check the spell")
+oneplayer = input("Wanna roll the dice? (yes/no): ")   
+if oneplayer.lower() == "yes" or "Yes" or "YES":
+     randompick = int(random.choice(possibleoutcome))
+     print("Your roll: " + str(randompick))
+     playerturns = randompick
+     print("Your score: " + str(playerturns + randompick))
+else:
+     print("Check the spell")
 
 
